@@ -1,0 +1,2 @@
+# argocd
+argued demo apps
