@@ -14,9 +14,9 @@ spec:
     spec:
       project: "nginx-ingress-controller"
       syncPolicy:
-       automated:
-        prune: true
-        selfHeal: true
+        automated:
+          prune: true
+          selfHeal: true
       source:
         repoURL: https://github.com/rputtapa/argocd.git
         targetRevision: master
