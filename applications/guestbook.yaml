@@ -14,7 +14,7 @@ spec:
     spec:
       project: "nginx-ingress-controller"
       source:
-        repoURL: https://github.com/argoproj/argocd-example-apps/
+        repoURL: https://github.com/rputtapa/argocd.git
         targetRevision: HEAD
         path: guestbook
       destination:
