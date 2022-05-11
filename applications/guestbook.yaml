@@ -12,7 +12,7 @@ spec:
     metadata:
       name: '{{name}}-guestbook' # 'name' field of the Secret
     spec:
-      project: "default"
+      project: "nginx-ingress-controller"
       source:
         repoURL: https://github.com/argoproj/argocd-example-apps/
         targetRevision: HEAD
