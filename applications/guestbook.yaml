@@ -4,18 +4,23 @@ metadata:
   name: guestbook
 spec:
   generators:
-  - clusters: {}
+  - list:
+      elements:
+      - cluster: cluster-1
+        url: https://145.40.90.179/k8s/clusters/c-gvvxc
+      - cluster: cluster-2
+        url: https://145.40.90.179/k8s/clusters/c-zk2pl
   template:
     metadata:
-      name: '{{name}}-guestbook'
+      name: '{{cluster}}-guestbook'
     spec:
-      project: "default"
+      project: default
       source:
-        repoURL: https://github.com/argoproj/argocd-example-apps/
+        repoURL: https://github.com/argoproj/applicationset.git
         targetRevision: HEAD
-        path: guestbook
+        path: examples/list-generator/guestbook/{{cluster}}
       destination:
-        server: '{{server}}'
+        server: '{{url}}'
         namespace: guestbook
       syncPolicy:
         automated:
