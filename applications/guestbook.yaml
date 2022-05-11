@@ -12,7 +12,7 @@ spec:
     metadata:
       name: '{{name}}-guestbook'
     spec:
-      project: "nginx-ingress-controller"
+      project: "default"
       syncPolicy:
         automated:
           prune: true
