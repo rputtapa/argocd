@@ -6,8 +6,6 @@ spec:
   generators:
   - clusters: {} # Automatically use all clusters defined within Argo CD
   template:
-    metadata:
-      name: '{{name}}-guestbook' # 'name' field of the Secret
     spec:
       project: "nginx-ingress-controller"
       source:
