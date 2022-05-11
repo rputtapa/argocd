@@ -4,15 +4,22 @@ metadata:
   name: guestbook
 spec:
   generators:
-  - clusters: {} # Automatically use all clusters defined within Argo CD
+  - clusters: 
+      selector:
+        matchLabels:
+          guestbook: enabled
   template:
     metadata:
-      name: '{{cluster}}-guestbook'
+      name: '{{name}}-guestbook'
     spec:
       project: "nginx-ingress-controller"
+      syncPolicy:
+       automated:
+        prune: true
+        selfHeal: true
       source:
         repoURL: https://github.com/rputtapa/argocd.git
-        targetRevision: HEAD
+        targetRevision: master
         path: guestbook
       destination:
         server: '{{server}}' # 'server' field of the secret
