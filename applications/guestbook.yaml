@@ -4,23 +4,16 @@ metadata:
   name: guestbook
 spec:
   generators:
-  - clusters: 
-      selector:
-        matchLabels:
-          guestbook: enabled
+  - clusters: {}
   template:
     metadata:
       name: '{{name}}-guestbook'
     spec:
       project: "default"
-      syncPolicy:
-        automated:
-          prune: true
-          selfHeal: true
       source:
-        repoURL: https://github.com/rputtapa/argocd.git
-        targetRevision: master
+        repoURL: https://github.com/argoproj/argocd-example-apps/
+        targetRevision: HEAD
         path: guestbook
       destination:
-        server: '{{server}}' # 'server' field of the secret
+        server: '{{server}}'
         namespace: guestbook
