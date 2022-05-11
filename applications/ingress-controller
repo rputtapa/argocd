@@ -7,7 +7,7 @@ spec:
   - clusters: 
       selector:
         matchLabels:
-          nginx-ingress: "enabled"
+          ingress-nginx: "enabled"
   template:
     metadata:
       name: '{{name}}-nginx-ingress-controller' # 'name' field of the Secret
