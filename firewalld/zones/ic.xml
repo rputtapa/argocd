@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zone>
+  <short>IC</short>
+  <description>IC service zone</description>
+  <service name="ssh"/>
+  <service name="dhcpv6-client"/>
+  <service name="cockpit"/>
+</zone>
