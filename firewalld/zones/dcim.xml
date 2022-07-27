@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<zone>
-  <short>DCIM</short>
-  <description>DCIM service zone</description>
-  <service name="ssh"/>
-  <service name="dhcpv6-client"/>
-  <service name="cockpit"/>
-</zone>
