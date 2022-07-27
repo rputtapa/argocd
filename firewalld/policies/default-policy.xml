@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <policy priority="500" target="CONTINUE">
   <service name="http"/>
-  <port port="8080" protocol="tcp"/>
-  <port port="8000" protocol="tcp"/>
-  <ingress-zone name="ecx"/>
-  <ingress-zone name="ecp"/>
-  <ingress-zone name="router"/>
-  <egress-zone name="ecx"/>
-  <egress-zone name="ecp"/>
+  <service name="https"/>
+  <ingress-zone name="ANY"/>
   <egress-zone name="router"/>
 </policy>
