@@ -1,9 +1,15 @@
 
 #!/bin/bash
 
+
+# clean up the resources in /etc/firewalld/ 
+rm -rf /etc/firewalld/zones/*.xml
+rm -rf /etc/firewalld/policies/*.xml
+#rm -rf /etc/firewalld/services/*.xml
+
 # copy zones and policies files to firewalld location
-mv zones/ /etc/firewalld/
-mv policies/ /etc/firewalld/
+cp -r zones/*.xml /etc/firewalld/zones/
+cp -r policies/*.xml /etc/firewalld/policies/
 #cp services /etc/firealld/
 
 # restart
