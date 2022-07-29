@@ -2,7 +2,7 @@
 <policy priority="501" target="CONTINUE">
   <service name="http"/>
   <service name="https"/>
-  <ingress-zone name="public"/>
+  <ingress-zone name="firewall"/>
   <ingress-zone name="ecp"/>
   <egress-zone name="ecx"/>
 </policy>
