@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policy priority="501" target="CONTINUE">
+  <port port="8080" protocol="tcp" />
+  <ingress-zone name="ecp"/>
+  <egress-zone name="ecx"/>
+</policy>
