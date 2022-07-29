@@ -3,5 +3,5 @@
   <service name="http"/>
   <service name="https"/>
   <ingress-zone name="ANY"/>
-  <egress-zone name="public"/>
+  <egress-zone name="firewall"/>
 </policy>
