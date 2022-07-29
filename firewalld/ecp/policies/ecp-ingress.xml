@@ -2,6 +2,6 @@
 <policy priority="501" target="CONTINUE">
   <service name="http"/>
   <service name="https"/>
-  <ingress-zone name="router"/>
+  <ingress-zone name="pubic"/>
   <egress-zone name="ecp"/>
 </policy>
