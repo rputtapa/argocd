@@ -1,6 +1,6 @@
 i<?xml version="1.0" encoding="utf-8"?>
 <service>
- <short>ecp-kafka</short>
- <description>ECP Kafka service</description>
+ <short>firewall-kafka-svc</short>
+ <description>Firewall Kafka service</description>
  <port protocol="tcp" port="9092" />
 </service>
