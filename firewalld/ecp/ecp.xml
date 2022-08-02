@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <zone target="%%REJECT%%">
+  <short>ecp</short>
+  <description>ECP Zone</description>
 </zone>
