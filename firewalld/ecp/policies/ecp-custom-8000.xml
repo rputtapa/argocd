@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <policy priority="-502" target="CONTINUE">
   <rule family="ipv4">
-    <source address="192.168.30.30/32"/>
-    <destination address="192.168.20.20/32"/>
-    <port port="8000" protocol="tcp"/>
-    <accept/>
+    <source address="192.168.30.30/32" />
+    <destination address="192.168.20.20/32" />
+    <port port="8000" protocol="tcp" />
   </rule>
-  <ingress-zone name="firewall"/>
-  <ingress-zone name="ecx" />
+  <ingress-zone name="ecx"/>
   <egress-zone name="ecp"/>
 </policy>
