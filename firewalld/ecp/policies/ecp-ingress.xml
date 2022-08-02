@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policy priority="501" target="CONTINUE">
+<policy priority="-500" target="CONTINUE">
   <service name="http"/>
   <service name="https"/>
   <ingress-zone name="firewall"/>
