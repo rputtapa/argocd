@@ -5,12 +5,12 @@
 # clean up the resources in /etc/firewalld/ 
 rm -rf /etc/firewalld/zones/*.xml
 rm -rf /etc/firewalld/policies/*.xml
-#rm -rf /etc/firewalld/services/*.xml
+rm -rf /etc/firewalld/services/*.xml
 
 # copy zones and policies files to firewalld location
 cp -r */*.xml /etc/firewalld/zones/
 cp -r */policies/*.xml /etc/firewalld/policies/
-#cp services /etc/firealld/
+cp -r */services/*.xml /etc/firewalld/services/
 
 # restart
 firewall-cmd --reload
