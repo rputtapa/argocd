@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- all http & https traffic from firewall to ecp zone --> 
 <policy priority="-500" target="CONTINUE">
   <service name="http"/>
   <service name="https"/>
